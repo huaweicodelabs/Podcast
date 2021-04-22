@@ -37,7 +37,9 @@ HUAWEI PODCAST App will give insight about how HMS Kits can be easily integrated
     2. Integrated the Cloud DB. Query, add and retrieve operations are performed using the cloud DB,
        In the app data is fetching from Cloud DB.
     3. Integrated the Audio Kit in Play Audio Activity, the audio url is played by using the Audio Kit. Audio Kit is used to perform, play, pause, stop, next play and previous play functions.
-    4. Integrated few common kits like Analytics, Crash Service, APM, AuthService With AGCUI and Push kit.
+    4. Record audio in the low-latency channel by using Audio Engine.
+    5. Display the headset status by using Awareness Kit.
+    6. Integrated few common kits like Analytics, Crash Service, APM, AuthService With AGCUI and Push kit.
 
 
 ## License
