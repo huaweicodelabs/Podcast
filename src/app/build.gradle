@@ -1,0 +1,122 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'com.huawei.agconnect'
+    id 'com.huawei.agconnect.apms'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+    androidExtensions {
+        experimental = true
+    }
+
+    defaultConfig {
+        applicationId "com.huawei.podcast"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        externalNativeBuild {
+            cmake {
+                arguments '-DANDROID_STL=c++_static'
+
+            }
+        }
+
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+            version "3.10.2"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //koin
+    implementation "org.koin:koin-android-viewmodel:2.1.5"
+    implementation "org.koin:koin-android:2.1.5"
+
+    //Coroutine
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.6"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7"
+
+    // Added Dependencies
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'androidx.activity:activity-ktx:1.1.0'
+    implementation "androidx.room:room-runtime:2.3.0-alpha04"
+    kapt "androidx.room:room-compiler:2.3.0-alpha04"
+
+    //recyclerview and cardView
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    //HMS kits
+    //Agc core
+    implementation 'com.huawei.agconnect:agconnect-core:1.5.0.300'
+    //Audio kit
+    implementation 'com.huawei.hms:audiokit-player:1.0.0.302'
+    //push kit
+    implementation 'com.huawei.hms:push:5.0.4.302'
+    //Crash Kit
+    implementation 'com.huawei.agconnect:agconnect-crash:1.4.1.300'
+    //Huawei Analytics
+    implementation 'com.huawei.hms:hianalytics:5.0.3.300'
+    //Awareness Kit
+   implementation 'com.huawei.hms:awareness:1.0.7.303'
+    //Ads Kit
+    implementation 'com.huawei.hms:ads-lite:13.4.30.301'
+    implementation 'com.huawei.hms:ads-consent:3.4.30.301'
+    //App Linking
+    implementation 'com.huawei.agconnect:agconnect-applinking:1.4.0.300'
+    //APM SDK
+    implementation 'com.huawei.agconnect:agconnect-apms:1.4.1.302'
+    //Cloud DB SDK
+    implementation 'com.huawei.agconnect:agconnect-database:1.2.2.301'
+    //Audio Engine
+    implementation 'com.huawei.multimedia:audiokit:1.0.3'
+    //Auth Service
+    implementation 'com.huawei.agconnect:agconnect-auth:1.5.0.300'
+    implementation "com.huawei.hms:hwid:5.0.5.300"
+}

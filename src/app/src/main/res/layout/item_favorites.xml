@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="type"
+            type="boolean" />
+
+        <variable
+            name="eList"
+            type="com.huawei.podcast.kotlin.database.model.Favourites" />
+        <variable
+            name="eListJava"
+            type="com.huawei.podcast.java.database.model.Favourites" />
+
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"
+        app:cardCornerRadius="@dimen/_6dp"
+        app:cardElevation="@dimen/_4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_100dp"
+                android:id="@+id/img_pod_cast"
+                android:layout_marginTop="@dimen/_6dp"
+                android:src="@drawable/dummy"
+                android:scaleType="fitXY"
+                android:layout_marginStart="@dimen/_20dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_title"
+                android:layout_toRightOf="@+id/img_pod_cast"
+                android:layout_toLeftOf="@+id/img_download"
+                android:layout_marginTop="@dimen/_30dp"
+                android:text="@{type?eList.podcast_title:eListJava.podcast_title}"
+                android:layout_marginStart="@dimen/_20dp"
+                style="@style/app_text_14"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_duration"
+                android:layout_below="@+id/txt_title"
+                android:layout_marginTop="@dimen/_10dp"
+                android:visibility="invisible"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_toEndOf="@+id/img_pod_cast"
+                android:layout_toStartOf="@+id/img_download"
+                style="@style/app_text_14"/>
+            <ImageView
+                android:id="@+id/img_download"
+                android:layout_width="@dimen/hiad_24_dp"
+                android:layout_height="@dimen/hiad_24_dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_6dp"
+                android:layout_marginEnd="@dimen/_6dp"
+                android:src="@drawable/ic_delete" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

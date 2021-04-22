@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_recording"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="00:00:00"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/showProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:id="@+id/lin_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/_50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/stop"
+                android:layout_width="@dimen/_50dp"
+                android:layout_height="@dimen/_50dp"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_stop_white"
+                android:background="@drawable/rounded_bac"
+              />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/stop"
+                style="@style/app_text_14_white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/start"
+                android:layout_width="@dimen/_50dp"
+                android:layout_height="@dimen/_50dp"
+                android:src="@drawable/ic_record_"
+                android:background="@drawable/rounded_bac_record"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/record"
+              style="@style/app_text_14_white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/recordings"
+                android:layout_width="@dimen/_50dp"
+                android:layout_height="@dimen/_50dp"
+                android:layout_marginLeft="20dp"
+                android:padding="7dp"
+                android:src="@drawable/ic_recording_list"
+                android:background="@drawable/rounded_bac_recording"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/txt_record"
+               style="@style/app_text_14_white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

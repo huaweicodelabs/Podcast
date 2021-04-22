@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huawei.podcast">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Permission required for Checking Internet Connection -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permission required for Reading Writing SD Card/Memory -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_STORAGE" /> <!-- 9.0 Adaptation -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Play songs to prevent CPU from sleeping. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Audio recording -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".java.application.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".java.main.view.SplashAd">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".kotlin.main.view.SplashAd">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".kotlin.main.view.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".java.main.view.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".java.main.view.DownloadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.main.view.DownloadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".java.main.view.SearchActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".kotlin.main.view.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".java.main.view.ChooseInterest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.main.view.ChooseInterest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".java.main.view.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.main.view.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".java.main.view.DetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.main.view.DetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".java.main.view.EpisodeDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.main.view.EpisodeDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".java.main.view.FavouritesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.main.view.FavouritesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".java.main.view.PlayAudioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.main.view.PlayAudioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".java.main.view.PlayBackHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.main.view.PlayBackHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".java.main.view.SubscribeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.main.view.SubscribeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".java.main.view.AddToPodCastActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.main.view.AddToPodCastActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".java.main.view.RecordingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.main.view.RecordingActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="push_kit_auto_init_enabled"
+            android:value="true" />
+
+        <service
+            android:name=".java.services.HMSPushService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".java.services.AudioNotificationService" />
+        <service
+            android:name=".kotlin.services.HMSPushService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".kotlin.services.AudioNotificationService" />
+
+        <meta-data
+            android:name="apms_debug_log_enabled"
+            android:value="true" />
+    </application>
+
+</manifest>

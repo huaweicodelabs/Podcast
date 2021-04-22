@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        card_view:cardElevation="3dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/img_back_arrow"
+                android:layout_width="@dimen/_30dp"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/_30dp"
+                android:layout_marginStart="10dp"
+                android:minHeight="?attr/actionBarSize"
+                android:src="@drawable/ic_back_arrow" />
+
+           <TextView
+               android:id="@+id/txt_title"
+               style="@style/app_text"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="@dimen/_16dp"
+               android:layout_marginEnd="@dimen/_20dp"
+               android:layout_gravity="center_vertical"
+               android:gravity="center_vertical"
+               android:textColor="@color/colorWhite"
+               android:layout_centerVertical="true"
+               android:textSize="@dimen/hiad_text_18_sp"
+               android:maxLines="1"
+               android:layout_toEndOf="@+id/img_back_arrow"
+               android:layout_toStartOf="@+id/img_sub_menu"
+               />
+
+            <ImageView
+                android:id="@+id/img_sub_menu"
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_more_ver" />
+       </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+

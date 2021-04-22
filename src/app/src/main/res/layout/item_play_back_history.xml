@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="type"
+            type="boolean" />
+        <variable
+            name="episodeList"
+            type="com.huawei.podcast.kotlin.data.model.PodCastList" />
+        <variable
+            name="episodeListJava"
+            type="com.huawei.podcast.java.data.model.PodCastList" />
+        <variable
+            name="clickInterface"
+            type="com.huawei.podcast.kotlin.interfaces.EpisodeClickListener" />
+
+        <variable
+            name="clickInterfaceJava"
+            type="com.huawei.podcast.java.interfaces.EpisodeClickListener" />
+        <variable
+            name="position"
+            type="int" />
+
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"
+        app:cardCornerRadius="@dimen/_6dp"
+        app:cardElevation="@dimen/_4dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:onClick="@{() ->type? clickInterface.onItemClick(episodeList,position):clickInterfaceJava.onItemClick(episodeListJava,position)}"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="@dimen/_100dp"
+        android:layout_height="@dimen/_100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/img_pod_cast"
+        android:layout_marginTop="@dimen/_10dp"
+        android:src="@drawable/dummy"
+        android:scaleType="fitXY"
+        android:layout_marginStart="@dimen/_20dp"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_title"
+        app:layout_constraintStart_toEndOf="@+id/img_pod_cast"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_30dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:text="@{type?episodeList.title:episodeListJava.title}"
+        android:layout_marginStart="@dimen/_20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/app_text_14"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_duration"
+        app:layout_constraintStart_toEndOf="@+id/img_pod_cast"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginStart="@dimen/_20dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title"
+        android:text="@{type?episodeList.date:episodeListJava.date}"
+        style="@style/app_text_14"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

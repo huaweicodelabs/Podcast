@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="type"
+            type="boolean" />
+        <variable
+            name="categoryList"
+            type="com.huawei.podcast.kotlin.data.model.HomePageModel" />
+
+        <variable
+            name="clickInterface"
+            type="com.huawei.podcast.kotlin.interfaces.CategoryClickListener" />
+        <variable
+            name="categoryListJava"
+            type="com.huawei.podcast.java.data.model.HomePageModel" />
+
+        <variable
+            name="clickInterfaceJava"
+            type="com.huawei.podcast.java.interfaces.CategoryClickListener" />
+
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="@dimen/_8dp"
+        android:onClick="@{() -> type?clickInterface.onItemClick(categoryList):clickInterfaceJava.onItemClick(categoryListJava)}"
+        app:cardCornerRadius="@dimen/_4dp"
+
+
+        app:cardElevation="@dimen/_6dp"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_category"
+                    android:layout_width="@dimen/_80dp"
+                    android:layout_height="@dimen/_80dp"
+                    android:layout_marginTop="@dimen/_28dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/dummy"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#99000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/podCast_name"
+                style="@style/app_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/_6dp"
+                android:singleLine="true"
+                android:text="@{type?categoryList.label:categoryListJava.label}"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

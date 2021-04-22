@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">PodCast</string>
+    <string name="no_network_connectivity">No Network Connectivity</string>
+    <string name="interest">Choose Your Interest</string>
+    <string-array name="choose_your_interest">
+        <item>Books</item>
+        <item>Careers</item>
+        <item>Stand Up</item>
+        <item>Language Learning</item>
+        <item>Drama</item>
+        <item>Music History</item>
+        <item>Daily News</item>
+        <item>Arts</item>
+        <item>Business</item>
+        <item>Comedy</item>
+        <item>Education</item>
+        <item>History</item>
+    </string-array>
+    <string-array name="trending">
+        <item>Language Learning</item>
+        <item>Drama</item>
+        <item>Music History</item>
+        <item>Daily News</item>
+    </string-array>
+    <string-array name="category">
+        <item>Books</item>
+        <item>Careers</item>
+        <item>Stand Up</item>
+        <item>Language Learning</item>
+        <item>Drama</item>
+        <item>Education</item>
+        <item>Comedy</item>
+    </string-array>
+    <string-array name="interest">
+        <item>Drama</item>
+        <item>Music History</item>
+        <item>Arts</item>
+        <item>History</item>
+    </string-array>
+    <string name="trending">Trending</string>
+    <string name="category">Category</string>
+    <string name="str_interest">Interest</string>
+    <string name="str_downloads">Downloads</string>
+    <string name="str_subs">Subscriptions</string>
+    <string name="str_play_back">Playback History</string>
+    <string name="str_fav">Favourites</string>
+    <string name="str_add_pod_cast">Add PodCast</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="search">Search</string>
+    <string name="episode">Episodes</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="next_episode">Next Episode</string>
+    <string name="add_fav">Add to your favourites</string>
+    <string name="choose_interest">Choose Your Interest</string>
+    <string name="remove_from_fav">Remove from your favourites</string>
+    <string name="added_to_fav">Added to favourites</string>
+    <string name="already_added_to_fav">Already Added to favourites</string>
+    <string name="removed_from_favourites">Removed from favourites</string>
+    <string name="share">Share</string>
+    <string name="stream">Stream</string>
+    <string name="position">position</string>
+    <string name="episode_list">episode_list</string>
+    <string name="recording_list">recording_list</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="topic">topic</string>
+    <string name="count">count</string>
+    <string name="ad_opend">Ad opened</string>
+    <string name="ad_clicked">Ad clicked</string>
+    <string name="ad_closed">Ad closed</string>
+    <string name="ad_leave">Ad Leave</string>
+    <string name="ad_loaded">Ad loaded</string>
+    <string name="ad_failed">Ad failed to load with error code %d.</string>
+    <string name="audio_downloadmanager">Android Audio download using DownloadManager.</string>
+    <string name="file_download_success">A new file is downloaded successfully</string>
+    <string name="file_downloaded">Already downloaded</string>
+    <string name="push_demo_log">PushDemoLog</string>
+    <string name="unsubscribe_exception">Unsubscribe failed: exception=</string>
+    <string name="unsubscribe_complete">Unsubscribe complete</string>
+    <string name="unsubscribe_failed">Unsubscribe failed: ret=</string>
+    <string name="subscribe_exception">Subscribe failed: exception</string>
+    <string name="subscribe_failed">Subscribe failed: ret=</string>
+    <string name="subcat_changes">Sub Category changes</string>
+    <string name="download">Download</string>
+    <string name="download_mp3">Download MP3</string>
+    <string name="openFolder">Open Downloaded Folder</string>
+    <string name="downloadStarted">Download Started…</string>
+    <string name="downloadCompleted">Download Completed…</string>
+    <string name="downloadFailed">Download Failed…</string>
+    <string name="downloadAgain">Download Again</string>
+    <string name="details">Struggling to start your podcast? Or, maybe you started a show but now you feel like you’re drowning? Podcasting Step by Step blends actionable guidance with motivation and a little loving hand-holding to help you overcome the overwhelm and turn you into a world-class podcaster.</string>
+    <string name="author">Matt Rubin</string>
+    =================================Subscribe Topic============================
+    <string name="add_subscribe_topic">Subscribe</string>
+    <string name="confirm">Confirm</string>
+    <string name="add_topic">Subscribe topic name</string>
+    <string name="delete_topic">unsubscribe topic name</string>
+    <string name="delete_subscribe_topic">UnSubscribe</string>
+    <string name="cancel">Cancel</string>
+    <string name="subscribe_complete">Subscribe complete</string>
+    <!-- splash ad -->
+    <string name="ad_id_splash">testd7c5cewoj6</string>
+    <string name="media_name">HUAWEI Ads</string>
+    <string name="copyright_info">Copyright 2020. Huawei Technologies Co., Ltd</string>
+    <string name="status_ad_dismissed">Splash Ad is dismissed.</string>
+    <string name="status_load_ad_fail">Ad loading state: failed to be loaded. Error code: </string>
+    <!-- Banner ad -->
+    <string name="banner_ad_id">testw6vs28auh3</string>
+    <string name="str_invite">Invite</string>
+    <string name="str_logout">Logout</string>
+    <string name="str_logged_out">Logout Successful</string>
+    <string name="no_downloads">No Downloads</string>
+    <string name="no_favourites_added">No Favourites Added</string>
+    <string name="owner">Huawei Podcast</string>
+    <string name="no_play_back">No Playback History</string>
+    <string name="no_favourites">No Favourites</string>
+    <string name="er_audio_play">You can\'t play song</string>
+    <string name="headset_connected">The headset is connected.</string>
+    <string name="headset_disConnected">The headset is disconnected.</string>
+    <string name="headset_unknown">The headset status is unknown.</string>
+    <string name="headset_connecting">The headset is connecting.</string>
+    <string name="headset_not_connecting">The headset is not connecting.</string>
+    <string name="headset_disconnecting">The headset is disconnecting.</string>
+    <string name="headset_not_disconnecting">The headset is not disconnecting.</string>
+    <string name="headset_action">HEADSET_BARRIER_RECEIVER_ACTION</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="username">username</string>
+    <string name="userid">user_id</string>
+    <string name="str_subscription_list">Subscription List</string>
+    <string name="no_subscription">No Subscriptions</string>
+    <string name="str_unsubscribe">Subscribed</string>
+    <string name="grant_permission">Permission granted!</string>
+    <string name="allow_permission">Please allow storage permission first</string>
+    <string name="barrier_success">add barrier success</string>
+    <string name="barrier_failed">add barrier failed</string>
+    <string name="response">response</string>
+    <string name="can_not_play">Cannot play this!!</string>
+    <string name="title">title</string>
+    <string name="slug">slug</string>
+
+    <string name="notInstallAudioKitService">The audio kit service is not installed.</string>
+    <string name="audioKitServiceDisconnect">The basic service of audio Kit has been disconnected.</string>
+    <string name="audioKitServiceDied">The basic service of audio kit is died.</string>
+    <string name="recording">Media Recorder</string>
+    <string name="tap_here">Tap here to record</string>
+    <string name="stop">Stop</string>
+    <string name="txt_record">Recordings</string>
+    <string name="record">Record</string>
+    <string name="txt_no_recordings">No Recordings</string>
+    <string name="txt_file_delete">File Deleted Successfully</string>
+    <string name="txt_delete_file">Could Not Delete File</string>
+    <string name="cloud_db_error">Error on updateUI(</string>
+    <string name="zero_duration">00:00</string>
+    <string name="str_null">null</string>
+    <string name="permission_denied">Permission denied to read your External storage</string>
+    <string name="double_quotes">" "</string>
+    <string name="three_zero_duration">00:00:00</string>
+    <string name="str_cloud_db">cloudDB</string>
+    <string name="str_create_object">createObjectType:</string>
+    <string name="str_size">list size==>></string>
+    <string name="str_remote_exception">remoteException</string>
+    <string name="str_intent">android.intent.action.MAIN</string>
+    <string name="str_cat">android.intent.category.LAUNCHER</string>
+    <string name="str_cancel_intent">getCancelPendingIntent</string>
+    <string name="str_list">Playlist</string>
+    <string name="str_fail">player init fail</string>
+    <string name="str_err">init err:</string>
+    <string name="str_seek_fail">seek fail </string>
+    <string name="str_seek">seek:</string>
+    <string name="token">token</string>
+    <string name="str_init">initAudioKit</string>
+    <string name="str_create_record">already created record</string>
+    <string name="start_record">startRecord, Exception is IOException</string>
+    <string name="al_recording">already recording</string>
+    <string name="thread_start">startAudioTrackThread  start...</string>
+    <string name="thread_ill">startAudioTrackThread IllegalThreadStateException</string>
+    <string name="str_stop">stopLowLatencyRecord</string>
+    <string name="stop_Exception">stopRecord(), IllegalStateException</string>
+    <string name="stop_record">stopRecord(), mMediaRecorder is null</string>
+    <string name="rec">REC</string>
+    <string name="splash_ad">SplashAdLoadListener onAdLoaded.</string>
+    <string name="token_er">Token Error: </string>
+    <string name="data_payload">Message data payload: </string>
+    <string name="notification_body">Message Notification Body: </string>
+    <string name="run_kill">run: kill my self.</string>
+    <string name="on_start">onStartCommand---startId:</string>
+    <string name="on_destroy">onDestroy</string>
+    <string name="on_create">onCreate</string>
+    <string name="on_bind">onBind</string>
+    <string name="app_link">AppLinkingException</string>
+    <string name="start_low_exception">startLowLatencyRecord Exception </string>
+    <string name="str_new_track">new Track IllegalThreadStateException</string>
+    <string name="str_audio">mAudioTrack is null</string>
+    <string name="str_track">mAudioTrack uninitialized</string>
+    <string name="str_running">running IllegalThreadStateException</string>
+    <string name="str_on_snap">onSnapshot: </string>
+    <string name="str_on_object">onSnapshot:(getObject) </string>
+    <string name="str_create">createObjectType: AGCConnectCloudDBError</string>
+    <string name="str_open">open clouddbzone success</string>
+    <string name="str_cloud">open clouddbzone failed for in Wrapper " + "open cloudDbZoneError</string>
+    <string name="str_null_try">CloudDBZone is null, try re-open it</string>
+    <string name="str_subscribe">subscribeSnapshot: AGConnectCloudDBException</string>
+    <string name="str_cloud_db_zone">CloudDBZone is null, try re-open it</string>
+    <string name="str_query">Query podcast list from cloud failed</string>
+    <string name="str_try_re_open">CloudDBZone is null, try re-open it</string>
+    <string name="str_cloud_fail">Query podcast list from cloud failed</string>
+    <string name="str_process">processQueryResult:</string>
+    <string name="str_agc_connect">processQueryResult: AGConnectCloudDBExceptionError</string>
+    <string name="str_upsert">upsert</string>
+    <string name="records">records</string>
+    <string name="str_add_fav">Added to favourites</string>
+    <string name="str_insert">Insert podcast info failed</string>
+    <string name="str_delete">Delete query</string>
+    <string name="str_podcast">Delete podcast failed</string>
+    <string name="str_on_add">Using default onAddOrQuery</string>
+    <string name="str_on_subscribe">Using default onSubscribe</string>
+    <string name="str_on_delete">Using default onDelete</string>
+    <string name="str_default_on">Using default updateUiOnError</string>
+    <string name="str_on_db">Using default onDBReady</string>
+    <string name="str_play">Play</string>
+    <string name="str_barrier">add barrier failed</string>
+
+    <string name="database_name">podCast.db</string>
+    <string name="cloud_db">Podcast</string>
+    <string name="hui_sign_in_with_huawei" translation_description="Sign in button text">Sign in with Huawei</string>
+    <string name="koltin_ext">com.huawei.podcast.kotlin.data.model.HomePageModel</string>
+
+
+
+    <string name="books">Books</string>
+    <string name="carrers">Careers</string>
+    <string name="standup">Stand Up</string>
+    <string name="language">Language Learning</string>
+    <string name="drama">Drama</string>
+    <string name="music">Music History</string>
+    <string name="daily_news">Daily News</string>
+    <string name="arts">Arts</string>
+    <string name="business">Business</string>
+    <string name="comedy">Comedy</string>
+    <string name="education">Education</string>
+    <string name="history">History</string>
+    <string name="download_using_download_manager">Android Audio download using DownloadManager.</string>
+</resources>

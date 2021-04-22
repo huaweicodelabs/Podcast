@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cv_search"
+    android:layout_width="@dimen/_150dp"
+    android:layout_height="160dp"
+    app:cardCornerRadius="@dimen/_4dp"
+    app:cardElevation="@dimen/_6dp"
+    android:layout_margin="@dimen/_8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+
+                <ImageView
+                    android:id="@+id/image_category"
+                    android:layout_width="@dimen/_80dp"
+                    android:layout_height="@dimen/_80dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/dummy"
+                    android:layout_marginTop="@dimen/_28dp"
+                    android:layout_centerHorizontal="true"
+                     />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="#99000000"
+                    android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/txt_search"
+                style="@style/app_text"
+                android:textSize="@dimen/_14dp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6dp"
+                android:layout_alignParentBottom="true"
+                android:singleLine="true"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@{subCategoryList.label}"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
